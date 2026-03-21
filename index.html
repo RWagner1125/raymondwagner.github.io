@@ -6,9 +6,7 @@
     <meta name="keywords" content="HTML, portfolio, projects">
     <meta name="author" content="Raymond Wagner">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Raymond Wagner Portfolio</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,16 +37,73 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>
-                This section will contain examples of my web development and programming
-                projects as I build my portfolio.
-            </p>
+
+            <table>
+                <caption>My Sample Projects</caption>
+
+                <colgroup>
+                    <col class="first-col">
+                    <col>
+                    <col class="third-col">
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Image / Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <a class="project-link" href="https://github.com/wagner1125" target="_blank">
+                                GitHub Profile
+                            </a>
+                        </td>
+                        <td>
+                            My GitHub profile where I upload programming assignments,
+                            web development work, and future projects.
+                        </td>
+                        <td>
+                            <a href="https://github.com/wagner1125" target="_blank">
+                                <img src="https://via.placeholder.com/100" alt="GitHub Profile Placeholder">
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a class="project-link" href="https://wagner1125.github.io/raymondwagner.github.io/" target="_blank">
+                                Portfolio Website
+                            </a>
+                        </td>
+                        <td>
+                            A personal website built using HTML and CSS to showcase my
+                            coursework, projects, and development progress.
+                        </td>
+                        <td>
+                            <a href="https://wagner1125.github.io/raymondwagner.github.io/" target="_blank">
+                                <img src="https://via.placeholder.com/100" alt="Portfolio Website Placeholder">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Click a project name or image to open the project.</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <p>
-                You can view my work and future projects through my GitHub profile.
+                You can view my work and future projects through my
+                <a class="project-link" href="https://github.com/wagner1125" target="_blank">GitHub profile</a>.
             </p>
         </section>
     </main>
