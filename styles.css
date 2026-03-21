@@ -1,4 +1,4 @@
-/* Page styling */
+/* General page setup */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,9 +6,10 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    animation: fadeInPage 1s ease-in-out;
 }
 
-/* Light overlay so text is readable */
+/* Light overlay for readability */
 body::before {
     content: "";
     position: fixed;
@@ -17,18 +18,18 @@ body::before {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.85);
-    z-index: -2;
+    z-index: -1;
 }
 
-/* Eagle banner */
-.banner{
-    width:100%;
-    height:260px;
-
-    background-image:url("eagle-banner.jpg");
-    background-size:80%; 
-    background-repeat:no-repeat;
-    background-position:center;
+/* Banner image */
+.banner {
+    width: 100%;
+    height: 260px;
+    background-image: url("eagle-banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
 }
 
 /* Header styling */
@@ -44,12 +45,14 @@ header h1 {
     font-weight: bold;
     margin: 0;
     padding-top: 20px;
+    animation: slideDown 1s ease-out;
 }
 
 header p {
     font-size: 20px;
     font-weight: bold;
     color: #bf0a30;
+    animation: fadeInText 2s ease-in-out;
 }
 
 /* Navigation bar */
@@ -76,14 +79,17 @@ nav a {
     font-weight: bold;
     font-size: 18px;
     padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     background-color: #002868;
     border-radius: 5px;
+    color: white;
+    transform: scale(1.08);
 }
 
-/* Main content sections */
+/* Main content */
 main {
     max-width: 900px;
     margin: auto;
@@ -96,17 +102,134 @@ section {
     margin: 20px 0;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp 0.8s ease both;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 section h2 {
     color: #002868;
 }
 
-/* Footer styling */
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeInTable 1.2s ease-in-out;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #002868;
+    color: white;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #002868;
+}
+
+.first-col {
+    background-color: #f2f2f2;
+}
+
+.third-col {
+    background-color: #f2f2f2;
+}
+
+/* Project links */
+.project-link {
+    color: #bf0a30;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.project-link:hover {
+    color: #002868;
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+/* Project images */
+td img {
+    width: 80px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
 footer {
     text-align: center;
     font-size: 14px;
     background-color: #002868;
     color: white;
     padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInTable {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
