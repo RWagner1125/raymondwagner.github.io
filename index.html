@@ -25,6 +25,7 @@
         </ul>
     </nav>
 
+
     <main>
         <section id="about">
             <h2>About</h2>
@@ -133,6 +134,13 @@
     <footer>
         <p>&copy; 2026 Raymond Wagner</p>
     </footer>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
 
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+</script>
 </body>
 </html>
