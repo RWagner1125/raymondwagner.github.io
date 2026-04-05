@@ -1,34 +1,39 @@
-# Raymond Wagner Website
+# Raymond Wagner Portfolio Website
 
-This repository contains the source code for my personal website hosted using **GitHub Pages**.
+## Overview
+This project is a personal portfolio website developed as part of coursework in web design and programming. The site demonstrates foundational skills in HTML5, CSS3, layout design, and responsive web development.
 
-## Project Overview
-This project was created as part of my web development coursework. The goal of the assignment was to build the basic structure of a webpage using HTML and publish it through GitHub Pages.
+The website showcases my progress as I continue learning front-end development and will be expanded with additional projects over time.
 
-## Website Features
-The webpage includes:
+---
 
-- HTML5 document structure
-- Metadata in the head section
-- A header with a welcome message
-- A navigation menu with internal links
-- Three main sections:
-  - About
-  - Projects
-  - Contact
-- A footer with a copyright symbol using an HTML character entity
+## Features
+
+- Semantic HTML5 structure
+- External CSS styling
+- Responsive design using media queries
+- Navigation menu with Flexbox
+- Styled project table with:
+  - `<thead>`, `<tbody>`, `<tfoot>`
+  - `<caption>`
+  - `<colgroup>` and `<col>`
+- CSS animations and transitions
+- Hover effects (navigation, sections, images)
+- Contact form with:
+  - Name (required)
+  - Email (required)
+  - Subject
+  - Message textarea
+- Form styling with focus and hover effects
+
+---
 
 ## Technologies Used
+
 - HTML5
-- GitHub Pages
+- CSS3
+- GitHub Pages (for hosting)
 
-## Live Website
-You can view the published website here:
+---
 
-https://rwagner1125.github.io
-
-## Author
-Raymond L. Wagner
-
-## Course
-New Perspectives on HTML5 and CSS3
+## Project Structure
